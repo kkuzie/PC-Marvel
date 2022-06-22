@@ -159,7 +159,7 @@ textarea {
   resize:vertical;
 }
 
-[type="submit"] {
+.comment-button {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background:darkred;
@@ -174,4 +174,4 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:blue; }
+.comment-button:hover { background:blue; }
