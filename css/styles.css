@@ -146,7 +146,7 @@ textarea {
   resize: vertical;
 }
 
-[type=submit] {
+.comment-button {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
   background: darkred;
@@ -163,6 +163,6 @@ textarea {
   font-weight: 700;
 }
 
-[type=submit]:hover {
+.comment-button:hover {
   background: blue;
 }
