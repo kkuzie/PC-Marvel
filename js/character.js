@@ -50,7 +50,9 @@ var marvel = {
 
                     stringCharDetails += "<h3>story</h3>";
                     //comment section
-                    stringCharDetails += "<form><input name='name' type='text' class='feedback-input' placeholder='Your MARVELous name'/><br><textarea name='text' class='feedback-input' placeholder='Write a MARVELous comment'></textarea><br><input type='submit' value='SUBMIT'/></form>";
+                    stringCharDetails += "<h3>comments</h3>";
+
+                    stringCharDetails += "<form><input name='name' type='text' class='feedback-input' placeholder='Your MARVELous name'/><br><textarea name='text' class='feedback-input' placeholder='Write a MARVELous comment'></textarea><br><input class='comment-button' type='submit' value='SUBMIT'/></form>";
 
 
 
