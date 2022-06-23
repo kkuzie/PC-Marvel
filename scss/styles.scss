@@ -30,7 +30,6 @@ nav {
             float: none;
         }
 
-
         button {
             float: right;
             padding: 6px 10px;
@@ -44,12 +43,7 @@ nav {
             @include mq(500px) {
                 float: none;
             }
-
         }
-
-        // &:hover {
-        //     background: #ccc;
-        // }
     }
 
     input[type=text] {
@@ -68,27 +62,6 @@ header {
     img {
         width: 200px;
     }
-}
-
-// @media screen and (max-width: 600px) {
-//     .topnav .search-container {
-//       float: none;
-//     }
-//     .topnav a, .topnav input[type=text], .topnav .search-container button {
-//       float: none;
-//       display: block;
-//       text-align: left;
-//       width: 100%;
-//       margin: 0;
-//       padding: 14px;
-//     }
-//     .topnav input[type=text] {
-//       border: 1px solid #ccc;  
-//     }
-//   }
-main {
-    // max-width: 90%;
-    margin: 0 auto;
 }
 
 //index page
@@ -116,7 +89,6 @@ main {
             height: unset;
             margin: 0 auto;
         }
-
     }
 
     h1 {
@@ -133,13 +105,13 @@ main {
             margin-left: 0;
             font-size: $h2;
         }
-
     }
 }
 
 section,
 aside {
     display: inline-block;
+
     h3 {
         margin-top: 2em;
     }
@@ -157,6 +129,7 @@ section {
         margin: 0 auto;
     }
 
+    // character images grid
     .charImg-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -171,7 +144,6 @@ section {
         @include mq(475px) {
             grid-template-columns: 1fr;
         }
-
 
         .charImg-1,
         .charImg-2,
@@ -200,9 +172,7 @@ section {
             }
         }
     }
-
 }
-
 
 aside {
     background-color: $background;
@@ -216,6 +186,7 @@ aside {
         width: 100%;
     }
 
+    // related characters images grid
     .charRelated-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -230,7 +201,6 @@ aside {
         @include mq(475px) {
             grid-template-columns: 1fr;
         }
-
 
         .charImg-1,
         .charImg-2,
@@ -249,11 +219,6 @@ aside {
 
         .charImg-2 {
             grid-area: 1 / 2;
-
-            // @include mq(550px) {
-            //     grid-area: 2 / 1;
-            // }
-
         }
 
         .charImg-3 {
@@ -278,8 +243,6 @@ aside {
             @include mq(400px) {
                 display: none;
             }
-
-
         }
 
         .charImg-5 {
@@ -292,7 +255,6 @@ aside {
             @include mq(550px) {
                 display: none;
             }
-
         }
 
         .charImg-6 {
@@ -311,11 +273,9 @@ aside {
             }
         }
     }
-
 }
 
 //comments section
-
 form {
     max-width: 600px;
     margin: 30px auto;
@@ -346,25 +306,24 @@ form {
             border: 2px solid darkred;
         }
     }
-}
 
+    .comment-button {
+        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        width: 100%;
+        background: darkred;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        color: white;
+        font-size: 24px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: all 0.3s;
+        margin-top: -4px;
+        font-weight: 700;
 
-.comment-button {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    width: 100%;
-    background: darkred;
-    border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    color: white;
-    font-size: 24px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    transition: all 0.3s;
-    margin-top: -4px;
-    font-weight: 700;
-
-    &:hover {
-        background: blue;
+        &:hover {
+            background: blue;
+        }
     }
 }

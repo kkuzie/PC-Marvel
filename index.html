@@ -14,26 +14,27 @@
 </head>
 
 <body>
+
     <header>
         <nav>
-            <img src="images/PC-marvelLogo.jpg" alt="Marvel Comics logo">
+            <a href="index.html">
+                <img src="images/PC-marvelLogo.jpg" alt="Marvel Comics logo">
+            </a>
             <div class="search-container">
-                <!-- <form action=""> -->
-                    <input id="searchBox" type="text" placeholder="Find a character" name="search">
-                    <button id="grep" type="submit">🔍
-                        <!-- <i class="fa fa-search"></i> -->
-                    </button>
-                <!-- </form> -->
+                <input id="searchBox" type="text" placeholder="Find a character" name="search">
+                <button id="grep" type="submit">🔍
+                </button>
             </div>
         </nav>
     </header>
+
 
     <div class="container">
         <h1>Character List</h1>
         <p class="lead text-center" id="message"></p>
     </div>
-    <main class="grid" id="marvel-characterContainer">
 
+    <main class="grid" id="marvel-characterContainer">
     </main>
 
     <div class="button">
@@ -46,9 +47,9 @@
     </footer>
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
-<!-- <script type="text/javascript" src="js/character.js"></script> -->
 
 </html>

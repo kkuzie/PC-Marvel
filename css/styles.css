@@ -62,10 +62,6 @@ header img {
   width: 200px;
 }
 
-main {
-  margin: 0 auto;
-}
-
 .grid {
   display: -ms-grid;
   display: grid;
@@ -346,8 +342,7 @@ form .feedback-input {
 form .feedback-input:focus {
   border: 2px solid darkred;
 }
-
-.comment-button {
+form .comment-button {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
   background: darkred;
@@ -363,6 +358,6 @@ form .feedback-input:focus {
   margin-top: -4px;
   font-weight: 700;
 }
-.comment-button:hover {
+form .comment-button:hover {
   background: blue;
 }

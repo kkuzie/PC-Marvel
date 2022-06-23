@@ -14,14 +14,16 @@
 </head>
 
 <body id="charPg">
+
     <header>
         <nav>
-            <img src="images/PC-marvelLogo.jpg" alt="Marvel Comics logo">
+            <a href="index.html">
+                <img src="images/PC-marvelLogo.jpg" alt="Marvel Comics logo">
+            </a>
             <div class="search-container">
                 <form action="">
                     <input type="text" placeholder="Find a character" name="search">
                     <button type="submit">🔍
-                        <!-- <i class="fa fa-search"></i> -->
                     </button>
                 </form>
             </div>
@@ -44,7 +46,6 @@
             <img class="charImg-1" src="/images/PC-thor.jpeg" alt="">
             <img class="charImg-2" src="/images/PC-thor.jpeg" alt="">
             <img class="charImg-3" src="/images/PC-thor.jpeg" alt="">
-
         </div>
 
         <h3>Story</h3>
@@ -56,9 +57,12 @@
             <textarea name='text' class='feedback-input' placeholder='Write a MARVELous comment'></textarea>
             <input class='comment-button' type='submit' value='SUBMIT' />
         </form>
+
     </section>
+
     <aside>
         <h3>Latest News</h3>
+
         <h3>Related Characters</h3>
         <div class="charRelated-grid">
             <img class="charImg-1" src="/images/PC-thor.jpeg" alt="">
@@ -67,26 +71,24 @@
             <img class="charImg-4" src="/images/PC-thor.jpeg" alt="">
             <img class="charImg-5" src="/images/PC-thor.jpeg" alt="">
             <img class="charImg-6" src="/images/PC-thor.jpeg" alt="">
-
         </div>
 
         <h3>Series</h3>
         <ul>
             <li id="series-1"></li>
             <li id="series-2"></li>
-         <!--    <li id="series-3"></li> -->
         </ul>
+
     </aside>
 
     <footer>
         <p id="attribution"></p>
     </footer>
 
-
 </body>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/char2.js"></script>
-<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
 
 </html>
