@@ -3,6 +3,8 @@ var currentOffset;
 var marvel = {
     render: function (pageOffSet, grep) {
         console.log("This is the value of grep " + grep);
+
+        //this is when want to add more characters more/back
         if ((pageOffSet > 1) && (grep == "")) {
             var baseUrl = "https://gateway.marvel.com:443/v1/public/characters"
             var apiKey = "apikey=d9758292826793baa47319d440b91d8a&hash=0137b844f3396fccaf1be6229cf376e4"
@@ -11,6 +13,7 @@ var marvel = {
             var url = baseUrl + offset + allChars + apiKey;
             console.log("This is the data offset one " + url);
 
+        //this is for searching characters
         } else if (grep != undefined) {
             var baseUrl = "https://gateway.marvel.com:443/v1/public/characters"
             var apiKey = "apikey=d9758292826793baa47319d440b91d8a&hash=0137b844f3396fccaf1be6229cf376e4"
@@ -19,6 +22,7 @@ var marvel = {
             var url = baseUrl + search + allChars + apiKey;
             console.log("This is the grep one " + url);
 
+        //this is the 'norm' index page
         } else {
             console.log("all characters if Statement");
             var baseUrl = "https://gateway.marvel.com:443/v1/public/characters"
