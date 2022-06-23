@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body>
+
+<body id="charPg">
     <header>
         <nav>
             <img src="images/PC-marvelLogo.jpg" alt="Marvel Comics logo">
@@ -33,21 +35,58 @@
         </div>
     </main>
 
-    <section id="charDetails">
+    <section>
         <h3>Description</h3>
         <p class="character-desc"></p>
+
         <h3>Images</h3>
+        <div class="charImg-grid">
+            <img class="charImg-1" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-2" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-3" src="/images/PC-thor.jpeg" alt="">
+
+        </div>
+
         <h3>Story</h3>
         <p class="character-story"></p>
-        <div class="grid"></div>
+
+        <h3>Comments</h3>
+        <form>
+            <input name='name' type='text' class='feedback-input' placeholder='Your MARVELous name' />
+            <textarea name='text' class='feedback-input' placeholder='Write a MARVELous comment'></textarea>
+            <input class='comment-button' type='submit' value='SUBMIT' />
+        </form>
     </section>
-    <aside id="charExtras">
+    <aside>
+        <h3>Latest News</h3>
+        <h3>Related Characters</h3>
+        <div class="charRelated-grid">
+            <img class="charImg-1" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-2" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-3" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-4" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-5" src="/images/PC-thor.jpeg" alt="">
+            <img class="charImg-6" src="/images/PC-thor.jpeg" alt="">
+
+        </div>
+
+        <h3>Series</h3>
+        <ul>
+            <li id="series-1"></li>
+            <li id="series-2"></li>
+         <!--    <li id="series-3"></li> -->
+        </ul>
     </aside>
+
+    <footer>
+        <p id="attribution"></p>
+    </footer>
 
 
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/char2.js"></script>
+<!-- <script type="text/javascript" src="js/scripts.js"></script> -->
 
 </html>
