@@ -5,7 +5,7 @@ var marvel = {
         console.log("This is the value of grep " + grep);
 
         //this is when want to add more characters more/back
-        if ((pageOffSet > 1) && (grep == "")) {
+        if ((pageOffSet > 1) && (grep == undefined)) {
             var baseUrl = "https://gateway.marvel.com:443/v1/public/characters"
             var apiKey = "apikey=d9758292826793baa47319d440b91d8a&hash=0137b844f3396fccaf1be6229cf376e4"
             var offset = "?offset=" + pageOffSet;
@@ -100,6 +100,7 @@ window.addEventListener('click', onClick);
 // load/back buttons
 $('.load-more-button').on('click', function () {
     var pageOffSet = 20 + currentOffset;
+     console.log("This is listner pageOffset "+pageOffSet);
     marvel.render(pageOffSet);
 });
 
