@@ -80,6 +80,14 @@ header img {
   text-align: center;
 }
 
+.button {
+  text-align: center;
+}
+.button button {
+  padding: 10px;
+  width: 100px;
+}
+
 .hero {
   background: url(/images/PC-Marvel-wallpaper.png);
 }
