@@ -373,3 +373,8 @@ form .comment-button {
 form .comment-button:hover {
   background: blue;
 }
+
+.userComments {
+  max-width: 600px;
+  margin: 0 auto;
+}
