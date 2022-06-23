@@ -8,14 +8,17 @@ var apiKey = "apikey=d9758292826793baa47319d440b91d8a&hash=0137b844f3396fccaf1be
 var allChars = "?ts=1&"
 var charID = "/" + getChar;
 var stories = "/stories";
+var comics = "/comics";
 
 var charUrl = baseUrl + charID + allChars + apiKey;
+
 var charStoriesUrl = baseUrl + charID + stories;
+var charComicsUrl = baseUrl + charID + comics + allChars + apiKey;
 
 $.getJSON(charUrl, function (data) {
     console.log(data);
 
-    
+
     let element = data.data.results[0];
     console.log(element);
 
@@ -28,6 +31,7 @@ $.getJSON(charUrl, function (data) {
     console.log(charStory);
 
     let attribution = document.getElementById('attribution');
+    attribution.innerHTML = data.attributionHTML;
 
     $(".character-img").attr("src", charImg);
     $(".character-name").append(charName);
@@ -38,13 +42,24 @@ $.getJSON(charUrl, function (data) {
         $(".character-desc").append(charDesc);
     };
 
-    for (let i = 0; i < 3; i++) {
-        let charSeries = element.series.items[i].name;
-        console.log(charSeries);
-        let idIndex = i + 1;
-        $("#series-" + idIndex).append(charSeries);
+    for (let i = 0; i < 10; i++) {
+        let charSeries = element.series.items[i];
+        // let charSeriesName = charSeries + ".name";
+        console.log("this is charSeries "+charSeries);
+        if (charSeries == undefined) {
+            console.log("No more series")
+            console.log("too many in series");
+        } else {
+
+            let charSeriesName = charSeries.name;
+            var list = document.getElementById('charSeriesList');
+            var entry = document.createElement('li');
+            entry.appendChild(document.createTextNode(charSeriesName));
+            list.appendChild(entry);
+        };
+
     };
 
-    attribution.innerHTML = data.attributionHTML;
 });
+
 
